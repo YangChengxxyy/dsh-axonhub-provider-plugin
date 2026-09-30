@@ -1,0 +1,3 @@
+- insert:
+    - id: axonhub
+      name: dsh-axonhub-provider-plugin

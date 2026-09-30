@@ -1,0 +1,7 @@
+# https://docs.devin.ai/onboard-devin/environment-yaml
+maintenance: |
+  npm install
+knowledge:
+  - name: lint
+    contents: |
+      npm run typecheck  # tsc --noEmit (JSDoc checkJs)

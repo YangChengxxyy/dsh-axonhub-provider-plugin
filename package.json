@@ -1,0 +1,35 @@
+{
+  "name": "dsh-axonhub-provider-plugin",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: registers an AxonHub gateway as llm-pi-ai providers (OpenAI + Anthropic protocols), auto-discovering models from /v1/models.",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "axonhub",
+    "llm-gateway"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.4"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.4",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.3"
+  }
+}
